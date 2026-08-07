@@ -1,0 +1,23 @@
+.custom-button {
+  font-family: 'Days One', sans-serif;
+  padding: 8px 24px;
+  border-radius: 20px;
+  border: none;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.custom-button:hover {
+  opacity: 0.9;
+}
+
+.secondary-btn {
+  background-color: transparent;
+  color: #ffffff;
+  margin-top: 15px;
+  font-size: 0.75rem;
+  text-decoration: underline;
+}

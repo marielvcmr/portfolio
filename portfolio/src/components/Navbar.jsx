@@ -1,13 +1,20 @@
 import React from 'react';
 import './Navbar.css';
 
-export default function Navbar({ onLogout }) {
+export default function Navbar({ onLogout, currentTab, setCurrentTab }) {
   return (
     <nav className="portfolio-navbar">
 
       <div className="nav-links">
-        <a href="#home">Home</a>
-        <a href="#projects">Projects</a>
+        <button 
+          onClick={() => setCurrentTab('home')} 
+          className={`nav-tab-btn ${currentTab === 'home' ? 'active-tab' : ''}`}
+        >Home</button>
+
+        <button 
+          onClick={() => setCurrentTab('projects')} 
+          className={`nav-tab-btn ${currentTab === 'projects' ? 'active-tab' : ''}`}
+        >Projects</button>
       </div>
 
       <button onClick={onLogout} className="logout-link-btn">

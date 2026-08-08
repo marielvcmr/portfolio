@@ -1,0 +1,11 @@
+.main-layout-wrapper {
+  background: linear-gradient(180deg, #ff9d6c 0%, #b366ff 60%, #8c33ff 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-layout-content {
+  flex: 1;
+  padding: 30px 0px 50px 0px;
+}

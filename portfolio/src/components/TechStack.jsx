@@ -24,7 +24,6 @@ export default function TechStack() {
 
   return (
     <section className="tech-stack-belt">
-      <h3 className="tech-stack-title">TECH STACK</h3>
       <div className="tech-grid">
 
         {technologies.map((tech, index) => (

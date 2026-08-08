@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import AuthPage from './components/AuthPage';
+import HomePage from './pages/HomePage';
 
 export default function App() {
   // Initialize state reading localStorage
@@ -24,28 +25,5 @@ export default function App() {
   }
 
   // Logged User see main content of portfolio
-  return (
-    <div style={{ padding: '40px', fontFamily: 'Inter, sans-serif', textAlign: 'center' }}>
-      <h1 style={{ fontFamily: "'Days One', sans-serif" }}>
-        ¡Welcome to Portfolio!
-      </h1>
-      <p style={{ fontFamily: "'JetBrains Mono', monospace", marginTop: '20px' }}>
-        Main Content
-      </p>
-      
-      <button 
-        onClick={handleLogout} 
-        style={{ 
-          marginTop: '30px', 
-          padding: '10px 20px', 
-          cursor: 'pointer',
-          fontFamily: "'Inter', sans-serif",
-          borderRadius: '8px',
-          border: '1px solid #ccc'
-        }}
-      >
-        Log Out
-      </button>
-    </div>
-  );
+  return <HomePage onLogout={handleLogout} />;
 }

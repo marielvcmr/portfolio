@@ -8,7 +8,7 @@ export const projectData = [
     iconContent: "flowsheet-logo.png", // Nombre del logo en assets/logos/
     about: "System to manage projects and employees",
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets.",
-    images: ["flowsheet-login.png", "flowsheet-dashboard.png"], 
+    images: ["flowsheet-login.png", "flowsheet-dashboard.png", "flowsheet-logo.png"], 
     stack: [
       "Node.js + Express.js (Backend)",
       "React.js + Vite (Frontend)",

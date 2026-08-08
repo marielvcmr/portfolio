@@ -2,6 +2,7 @@ import React from 'react';
 import ProjectDescription from '../../components/ProjectDescription';
 import StackAccordion from '../../components/StackAccordion';
 import GithubRepoLink from '../../components/GithubRepoLink';
+import ImageSlider from '../../components/ImageSlider';
 import './ProjectDetailContent.css';
 
 export default function ProjectDetailContent({ project, onBack }) {
@@ -27,6 +28,12 @@ export default function ProjectDetailContent({ project, onBack }) {
       <ProjectDescription 
         title={project.name} 
         description={project.description} 
+      />
+
+      <ImageSlider 
+        images={project.images} 
+        projectId={project.id} 
+        projectName={project.name} 
       />
 
       <div className = "detail-actions-row">

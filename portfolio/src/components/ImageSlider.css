@@ -1,0 +1,99 @@
+.project-slider-wrapper {
+  margin: 30px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Contenedor horizontal que alinea Flecha Izquierda + Marco + Flecha Derecha */
+.slider-main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  max-width: 680px; /* Incrementado un poco para dar espacio a las flechas laterales */
+  gap: 15px;
+}
+
+.slider-frame {
+  background-color: transparent;
+  padding: 15px;
+  border-radius: 20px;
+  flex: 1;
+  max-width: 600px;
+  box-sizing: border-box;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.slider-img-element {
+  width: 100%;
+  height: auto;
+  max-height: 380px;
+  object-fit: contain;
+  border-radius: 10px;
+  display: block;
+}
+
+/* Estilos de los Botones de las Flechas */
+.slider-arrow-btn {
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  font-size: 1.2rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  user-select: none;
+}
+
+.slider-arrow-btn:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  transform: scale(1.08);
+}
+
+.slider-arrow-btn:active {
+  transform: scale(0.95);
+}
+
+/* Sección Inferior de Datos */
+.slider-footer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 12px;
+  gap: 8px;
+}
+
+.frame-indicator-label {
+  font-family: 'Days One', sans-serif;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.4rem;
+}
+
+/* Contenedor de las burbujas de progreso */
+.slider-dots-container {
+  display: flex;
+  gap: 8px;
+}
+
+.slider-dot {
+  width: 8px;
+  height: 8px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.slider-dot.active {
+  background-color: #ffffff;
+  transform: scale(1.2);
+}

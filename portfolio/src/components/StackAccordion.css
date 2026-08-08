@@ -1,0 +1,61 @@
+.stack-accordion-section {
+  width: 100%;
+  max-width: 320px;
+  margin-bottom: 40px;
+}
+
+.accordion-trigger-btn {
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 1px solid #0f0f0f;
+  color: #481556;
+  font-family: 'Days One', sans-serif;
+  font-size: 1.1rem;
+  padding: 12px 30px;
+  border-radius: 30px;
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.2s ease;
+}
+
+.accordion-trigger-btn:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.accordion-trigger-btn .arrow-indicator {
+  transition: transform 0.2s ease;
+  display: inline-block;
+}
+
+.accordion-trigger-btn.open .arrow-indicator {
+  transform: rotate(90deg);
+}
+
+.accordion-content-panel {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 10px;
+  font-family: 'JetBrains Mono', monospace;
+  color: #0f0f0f;
+  border: 1px solid rgba(19, 5, 5, 0.457);
+}
+
+.accordion-intro-phrase {
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #481556;
+}
+
+.accordion-list-element {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.85rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}

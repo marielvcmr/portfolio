@@ -1,6 +1,6 @@
 import React from 'react';
 import ProjectDescription from '../../components/ProjectDescription';
-
+import StackAccordion from '../../components/StackAccordion';
 import './ProjectDetailContent.css';
 
 export default function ProjectDetailContent({ project, onBack }) {
@@ -27,6 +27,8 @@ export default function ProjectDetailContent({ project, onBack }) {
         title={project.name} 
         description={project.description} 
       />
+
+      <StackAccordion stack={project.stack} />
 
     </div>
   );

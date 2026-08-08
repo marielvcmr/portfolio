@@ -59,3 +59,10 @@
   flex-direction: column;
   gap: 6px;
 }
+
+.stack-accordion-section {
+  width: 100%;
+  max-width: 320px;
+  
+  margin-bottom: 0px; 
+}

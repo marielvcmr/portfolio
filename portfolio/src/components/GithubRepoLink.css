@@ -1,0 +1,22 @@
+.github-redirect-section {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.github-icon-anchor {
+  display: inline-block;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.github-logo-img-element {
+  width: 45px;
+  height: 45px;
+  object-fit: contain; 
+  display: block;
+}
+.github-icon-anchor:hover {
+  transform: scale(1.15);
+}

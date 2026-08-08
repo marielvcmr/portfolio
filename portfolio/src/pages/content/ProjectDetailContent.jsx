@@ -1,6 +1,7 @@
 import React from 'react';
 import ProjectDescription from '../../components/ProjectDescription';
 import StackAccordion from '../../components/StackAccordion';
+import GithubRepoLink from '../../components/GithubRepoLink';
 import './ProjectDetailContent.css';
 
 export default function ProjectDetailContent({ project, onBack }) {
@@ -28,7 +29,10 @@ export default function ProjectDetailContent({ project, onBack }) {
         description={project.description} 
       />
 
-      <StackAccordion stack={project.stack} />
+      <div className = "detail-actions-row">
+        <StackAccordion stack={project.stack} />
+        <GithubRepoLink repoUrl={project.repo} />
+      </div>
 
     </div>
   );

@@ -1,20 +1,21 @@
 .tech-stack-belt {
-  background-color: #374151;
   color: #ffffff;
-  padding-bottom: 10px;
+  padding-bottom: 0px;
   text-align: center;
   width: 100%;
   box-sizing: border-box;
 }
 
 .tech-stack-title {
+  background-color: transparent;
   font-family: 'Inter', sans-serif;
   font-size: 1.3rem;
   letter-spacing: 2px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .tech-grid {
+  background-color: rgba(0, 0, 0, 0.474);
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.95rem;
   display: flex;
@@ -23,6 +24,7 @@
   gap: 10px;
   max-width: 100%;
   margin: 0 auto;
+  padding: 15px;
 }
 
 /* Contenedor individual para cada logo + texto */
@@ -30,7 +32,7 @@
   display: flex;
   align-items: center;
   gap: 10px; /* Espacio entre el logo y el texto */
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(255, 255, 255, 0.166);
   padding: 6px 14px;
   border-radius: 12px;
   transition: transform 0.2s ease;

@@ -1,0 +1,53 @@
+.tech-stack-belt {
+  background-color: #374151;
+  color: #ffffff;
+  padding-bottom: 10px;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.tech-stack-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.tech-grid {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.95rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Contenedor individual para cada logo + texto */
+.tech-item-box {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espacio entre el logo y el texto */
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 6px 14px;
+  border-radius: 12px;
+  transition: transform 0.2s ease;
+}
+
+.tech-item-box:hover {
+  transform: translateY(-3px); /* Pequeño efecto flotante al pasar el mouse */
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Control estricto del tamaño del logo para que no se deforme */
+.tech-logo-img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.tech-name-text {
+  font-weight: 400;
+}

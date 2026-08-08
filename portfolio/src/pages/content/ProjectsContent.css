@@ -1,0 +1,19 @@
+.projects-view-container {
+  max-width: 950px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.projects-section-title {
+  font-family: 'Days One', sans-serif;
+  color: #2e1065;
+  text-align: center;
+  font-size: 1.4rem;
+  margin-bottom: 40px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}

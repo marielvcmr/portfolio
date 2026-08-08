@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import AuthPage from './components/AuthPage';
 import MainLayout from './pages/MainLayout';
 import HomeContent from './pages/content/HomeContent';
+import ProjectsContent from './pages/content/ProjectsContent';
 
 export default function App() {
   // Initialize state reading localStorage

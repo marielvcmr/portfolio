@@ -1,0 +1,26 @@
+.project-desc-card {
+  background-color: rgba(255, 255, 255, 0.323);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(8px);
+  border-radius: 35px;
+  padding: 40px;
+  width: 100%;
+  box-sizing: border-box;
+  color: #0f0f0f;
+  border-color: #0f0f0f;
+}
+
+.detail-project-title {
+  font-family: 'Days One', sans-serif;
+  color: #481556;
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+
+.detail-project-text {
+  font-family: 'JetBrains Mono', monospace;
+  color: #0f0f0f;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  text-align: justify;
+}

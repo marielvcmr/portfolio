@@ -2,21 +2,31 @@ import React from 'react';
 import './ProjectCard.css';
 
 export default function ProjectCard({ project, onClick }) {
+
+    const getLogoUrl = (projectFolder, fileName) => {
+    return new URL(`../assets/projects/${projectFolder}/${fileName}`, import.meta.url).href;
+  };
+
   return (
     <div className="project-card" onClick={onClick}>
-      <h3 className="project-card-title">{project.title}</h3>
+      <h3 className="project-card-title">{project.name}</h3>
       
       <div className="project-card-illustration">
-        {project.type === "text" ? (
+        {project.iconType === "image" ? (
           <div className="project-brand-box">
-            <span className="brand-dot">⚿</span> {project.content}
+            <img 
+              src={getLogoUrl(project.id, project.iconContent)} 
+              alt={`${project.name} logo`} 
+              className="card-brand-logo-img" 
+              onError={(e) => { e.target.style.display = 'none'; }}
+            />
           </div>
         ) : (
-          <span className="project-emoji-icon">{project.content}</span>
+          <span className="project-emoji-icon">{project.iconContent}</span>
         )}
       </div>
 
-      <p className="project-card-desc">{project.desc}</p>
+      <p className="project-card-desc">{project.about}</p>
     </div>
   );
 }

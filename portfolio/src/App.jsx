@@ -3,6 +3,7 @@ import AuthPage from './components/AuthPage';
 import MainLayout from './pages/MainLayout';
 import HomeContent from './pages/content/HomeContent';
 import ProjectsContent from './pages/content/ProjectsContent';
+import ProjectDetailContent from './pages/content/ProjectDetailContent';
 
 export default function App() {
   // Initialize state reading localStorage
@@ -12,6 +13,8 @@ export default function App() {
 
   // state to control what to show inside the screen
   const [currentTab, setCurrentTab] = useState('home');
+
+  const [activeProject, setActiveProject] = useState(null);
 
   //  login in AuthPage is successful
   const handleLoginSuccess = () => {
@@ -28,11 +31,23 @@ export default function App() {
   if (!isLoggedIn) {
     return <AuthPage onLoginSuccess={handleLoginSuccess} />;
   }
+ // function to control whether we show the whole project list or the details in one
+  const renderProjectsTabFlow = () => {
+    if (activeProject) {
+      return (
+        <ProjectDetailContent 
+          project={activeProject} 
+          onBack={() => setActiveProject(null)} 
+        />
+      );
+    }
+    return <ProjectsContent onSelectProject={(project) => setActiveProject(project)} />;
+  };
 
   // Logged User see main content of portfolio
   return (
     <MainLayout onLogout={handleLogout} currentTab={currentTab} setCurrentTab={setCurrentTab}>
-      {currentTab === 'home' ? <HomeContent /> : <ProjectsContent />}
+      {currentTab === 'home' ? <HomeContent /> : renderProjectsTabFlow()}
     </MainLayout>
   );
 }

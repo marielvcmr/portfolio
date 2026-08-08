@@ -1,0 +1,26 @@
+.profile-card-container {
+  background-color: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 35px;
+  padding: 40px;
+  max-width: 750px;
+  margin: 40px auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border-color: #0f0f0f;
+}
+
+.profile-greeting {
+  font-family: 'JetBrains Mono', sans-serif;
+  color: #2e1065;
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+
+.profile-description {
+  font-family: 'JetBrains Mono', sans-serif;
+  color: #0f0f0f;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  text-align: justify;
+}

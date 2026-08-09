@@ -25,16 +25,18 @@ export default function ProjectDetailContent({ project, onBack }) {
         ← Back to Projects
       </button>
       
-      <ProjectDescription 
-        title={project.name} 
-        description={project.description} 
-      />
+      <div className="detail-top-row">
+        <ProjectDescription 
+          title={project.name} 
+          description={project.description} 
+        />
 
-      <ImageSlider 
-        images={project.images} 
-        projectId={project.id} 
-        projectName={project.name} 
-      />
+        <ImageSlider 
+          images={project.images} 
+          projectId={project.id} 
+          projectName={project.name} 
+        />
+      </div>
 
       <div className = "detail-actions-row">
         <StackAccordion stack={project.stack} />
